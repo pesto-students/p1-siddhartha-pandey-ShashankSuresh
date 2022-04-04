@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif !important;
+}
+.nav-icon{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 80vh;
+    background: white;
+    padding: 0px 5px;    
+    z-index: 1;
+}
+.nav-icon .las, .lab{
+    padding: 30px 10px;
+}
+.sound-cover{
+    background-color: #4E4E4E;    
+    padding: 3rem;
+    z-index: 0;
+}
+.sound-cover > .row {
+    margin-left: 3em;
+}
+.sound-playlist{
+    margin-left: 3rem;
+    padding: 1.5rem;
+    height: 100vh;
+}
+.sound-playlist > .row{
+    align-items: center;
+}
+.sound-playlist > .row:nth-child(2), .row:nth-child(4){
+    background-color: #F0F0F0;
+}
+.song-name,.song-artist,.song-duration, .sync-to-cloud{
+    margin-top: 1em;
+}
+.btn-sync{
+    color: blue;
+    text-transform: uppercase;
+}
+.sound-text{
+    color: white;
+}
+.sound-cover .sound-img{
+    vertical-align: middle;
+}
+.head{
+    font-weight: 900;
+    margin-top: 0.5em;
+}
+.sub-head-1{
+    padding-top: 1.5em;
+    margin-bottom: 0px;
+}
+.sub-head-1,.sub-head-2{
+    margin-bottom: 0px;
+}
+.txt-controls{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+.sound-controls{
+    margin-bottom: 0px !important;
+    margin-top: 1.5em;
+}
+.sound-controls > .las {
+    padding: 30px 10px 30px 0px;
+}
+.floating-sound-control{
+    z-index: 2;
+    display: block;
+    position: sticky;
+    bottom: 0;
+}
+.floating-sound-control > .row{
+    background-color: #43689b;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+.img-size{
+    width: 100%;
+}
+.ctlr-txt{
+    margin-bottom: 0;    
+}
+a,a:link, a:visited a:hover{
+    color: inherit !important;
+}
+@media screen and (max-width: 768px) {
+    .nav-icon{
+        height: 85vh;
+    }
+    .sound-cover{        
+        margin-left: 0%;        
+    }
+    .mob {        
+        width: 20% !important;
+        text-align: center;
+        margin-top: 5px;
+    }    
+}
