@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersise 2.1</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>    
+    <header>    
+        <h1>Lorem Ipsum</h1>
+    </header>
+    <div class="container">
+        <section class="sec-articles">
+            <article>
+                <img src="https://images.freeimages.com/images/small-previews/b23/d-link-switch-1243624.jpg">
+                <h3 class="title">Article 1</h3>
+                <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <a href="#" class="btn-read-more">Read More</a>
+            </article>
+            <article>
+                <img src="https://images.freeimages.com/images/small-previews/398/le-tour-eiffel-3-1550405.jpg">
+                <h3 class="title">Article 2</h3>
+                <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <a href="#" class="btn-read-more">Read More</a>
+            </article>
+            <article>
+                <img src="https://images.freeimages.com/images/small-previews/add/golden-gate-1471075.jpg">
+                <h3 class="title">Article 3</h3>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eius at a maiores, dolorum distinctio id aliquid voluptatum soluta vel non delectus suscipit ad magnam? Nihil impedit tempore nam illum suscipit, vitae voluptatum, itaque quibusdam saepe harum a. Libero officiis maiores iure corporis, facilis distinctio quae voluptatem numquam excepturi aut!</p>
+                <a href="#" class="btn-read-more">Read More</a>
+            </article>       
+        </section> 
+    </div>
+    <section class="sec-register-form">    
+        <form action="#" method="post" style="display: flex;flex-direction: column;">
+            <h1>Registration Form</h1>
+            <label class="f-head">Title</label>
+            <div style="display: inline;">
+                <input type="radio" name="title" value="Mr" checked>Mr
+                <input type="radio" name="title" value="Mrs">Mrs
+                <input type="radio" name="title" value="Miss">Miss
+            </div>
+            <label class="f-head">First Name</label>
+                <input type="text" name="txt-fname" required>
+            <label class="f-head">Last Name</label>
+                <input type="text" name="txt-lname" required>
+            <label class="f-head">Email</label>
+                <input type="email" name="email" required>
+            <label class="f-head">Phone Number</label>
+                <input type="number" name="phone" required>
+            <label class="f-head">Username</label>
+                <input type="text" name="user-name" required>
+            <label class="f-head">Password</label>
+                <input type="password" name="pwd" required>
+            <label class="f-head">Confirm Password</label>
+                <input type="password" name="cpwd" required>
+            <label class="f-head">Country</label>
+                <select name="country">
+                    <option>India</option>
+                    <option>Canada</option>
+                    <option>Malaysia</option>
+                    <option>Germany</option>
+                    <option>Australia</option>
+                </select>
+            <div style="display: inline;padding: 10px 0px"> 
+                <input type="checkbox" name="terms" required>I Agree to the <a href="#">terms and conditions</a>
+            </div>
+            <input type="submit" name="Submit" value="Submit" class="btn-read-more"> 
+        </form>    
+    </section>
+</body>
+</html>
