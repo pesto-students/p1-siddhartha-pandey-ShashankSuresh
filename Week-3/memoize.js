@@ -1,4 +1,4 @@
-function memoizeAdd(fn) {
+function memoizeMultiply(fn) {
     const cache = new Map();
     return function (...args) {
         const value = args.toString();
@@ -10,7 +10,7 @@ function memoizeAdd(fn) {
     }
 };
 
-function add(a, b) {
+function multiply(a, b) {
     return a * b;
 }
 function time(fn){
@@ -19,8 +19,8 @@ function time(fn){
     console.timeEnd();
 }
 
-const addM = memoizeAdd(add);
-time(() => console.log(addM(1312,1312)));
-time(() => console.log(addM(1312,1312)));
-time(() => console.log(addM(999,999)));
-time(() => console.log(addM(999,999)));
+const multiplyM = memoizeMultiply(multiply);
+time(() => console.log(multiplyM(1312,1312)));
+time(() => console.log(multiplyM(1312,1312)));
+time(() => console.log(multiplyM(999,999)));
+time(() => console.log(multiplyM(999,999)));
