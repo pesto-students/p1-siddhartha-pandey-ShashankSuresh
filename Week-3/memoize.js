@@ -1,5 +1,5 @@
 function memoizeMultiply(fn) {
-    const cache = new Map();
+    const cache = new Map(); // creates a data structure
     return function (...args) {
         const value = args.toString();
         if (cache.has(value)) {
