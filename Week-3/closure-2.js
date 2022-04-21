@@ -1,16 +1,14 @@
 function createStack() {    
-    return {
-        items: [],
-        push(item) {
-            this.items.push(15); // adding 5 here would mean it's within the scope of the function createStack.
-        },
-        pop() {
-            return this.items.pop();
-        }
-    };
+    var a = 83;
+    function anotherStack(){
+        var b = 17;
+        return (a+b);
+    }    
+    console.log(anotherStack());
 }
-const stack = createStack();
-stack.push(10);
-stack.push(5);
-stack.pop();// => 5
-stack.items;// => undefined
+// stack.push(10);
+// stack.push(5);
+// stack.pop();// => 5
+// stack.items;// => undefined // => will print 15 as it's defined within the scope.
+createStack();
+
