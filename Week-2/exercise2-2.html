@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transform - Excersise</title>
+        <style>
+            .main {
+                display: flex;
+                margin: 0 24em;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+            .main:hover > .red, .main:hover > .blue{
+                animation-name: openup;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-timing-function: revert-layer;
+            }
+            .main:hover > .yellow, .main:hover > .green{
+                animation-name: openup1;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-timing-function: revert-layer;
+            }           
+
+            @keyframes openup {
+                to {
+                    transform: translateX(-100px) rotateZ(90deg);
+                    transition-duration: 1s;                    
+                }
+            }
+            @keyframes openup1 {
+                0%{
+                    transform: none;
+                }
+                100% {
+                    transform: translateX(100px) rotateZ(90deg);
+                    transition-duration: 1s;
+                }
+            }
+            .red {
+                background-color: red;
+                width: 100px;
+                height: 100px;
+                position: relative;
+            }
+
+            .yellow {
+                background-color: yellow;
+                width: 100px;
+                height: 100px;
+                position: relative;
+            }
+
+            .blue {
+                background-color: blue;
+                width: 100px;
+                height: 100px;
+                position: relative;
+            }
+
+            .green {
+                background-color: green;
+                width: 100px;
+                height: 100px;
+                position: relative;
+            }
+            .hi {
+                z-index: -1;
+                position: absolute;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="hi">Hi!!</div>
+            <div class="blue"></div>
+            <div class="green"></div>
+        </div>
+    </body>
+</html></div></body></html>

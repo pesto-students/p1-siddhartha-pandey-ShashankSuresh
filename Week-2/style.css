@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Raleway;
+    color: #173f6d;   
+    padding: 5em; 
+}
+header{
+    text-align: center;
+}
+.sec-articles{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+}
+.sec-articles-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+.sec-articles article, .sec-articles-3 article{    
+    text-align: justify;
+    letter-spacing: 0px;
+    line-height: 1.5;
+    margin: 10px;
+}
+.sec-articles div.nested, .sec-articles-3 div.nested{
+    display: grid;
+    grid-gap: 0.5em;
+}
+.sec-articles img, .sec-articles-3 img{
+    width: 100%;
+}
+.sec-articles .title, .sec-articles-3 .title{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.sec-articles .desc, .sec-articles-3 .desc{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.sec-articles .btn-read-more, .sec-articles-3 .btn-read-more{    
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: white;
+    background: #173f6d;
+    border-radius: 5px;
+    text-decoration: none;    
+}
+.sec-register-form form{
+    padding: 40px;
+    line-height: 2;
+    width: 500px;    
+}
+.sec-register-form form .f-head{
+    font-weight: 600;
+}
+.sec-register-form form input, select{
+    padding: 10px;
+    border: 1px solid #c9c9c9;
+}
+fieldset {
+    border: 1px solid grey;
+    font-weight: 900;
+}
+.sec-register-form form .btn-submit{
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: white;
+    background: #173f6d;
+    border-radius: 5px;
+    text-decoration: none; 
+}
+footer{
+    text-align: center;
+}
+@media only screen and (max-width: 600px){
+    body{
+        padding: 1em;
+    }
+    .sec-articles, .sec-articles-3{
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);        
+    }
+    .sec-articles article img, .sec-articles-3 article img{
+        width: 100%;
+    }
+    .sec-register-form{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec-register-form form{
+        padding: 0;
+        width: 100%;
+    }
+}
